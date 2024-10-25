@@ -1,0 +1,205 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: darkcyan;
+  padding: 1rem 0;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+#hero {
+  background: url(https://x-team.com/hs-fs/hubfs/Imported_Blog_Media/Visual-Studio-Code-2.jpg?width=2180&height=980&name=Visual-Studio-Code-2.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* About Section */
+#about {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  background-color: darkcyan;
+  color: white;
+  padding: 2rem 0;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 28%;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow projects to wrap on smaller screens */
+}
+
+.project img {
+  width: 100px;
+  height: auto;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact input, .contact textarea {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .service-cards, .project-list {
+    flex-direction: column;
+  }
+  .card, .project {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact input, .contact textarea {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem 0;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
